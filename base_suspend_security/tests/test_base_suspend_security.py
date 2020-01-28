@@ -46,4 +46,4 @@ class TestBaseSuspendSecurity(TransactionCase):
         with self.assertRaises(exceptions.AccessError):
             model.sudo(user_without_access).search([])
         # this tests the search
-            model.sudo(user_without_access).suspend_security().search([])
+        model.sudo(user_without_access).suspend_security().search([])
